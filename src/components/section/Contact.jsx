@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 import emailjs from "emailjs-com";
 
+
 export const Contact = () => {
   const [formData, setFormData] = useState({
     from_name: "",
@@ -15,12 +16,15 @@ export const Contact = () => {
     e.preventDefault();
 
     emailjs
-     .sendForm(
-  import.meta.env.VITE_SERVICE_ID,
-  import.meta.env.VITE_TEMPLATE_ID,
+     
+      .sendForm(
+  'service_prp4m5f',     // Replace with your actual EmailJS service ID
+  'template_10m60nq',    // Replace with your actual EmailJS template ID
   formRef.current,
-  'dAeV582HNtdhUjzZ4'  
+  'dAeV582HNtdhUjzZ4'      // Replace with your actual EmailJS public key
 )
+
+
 
       .then((result) => {
         alert("Message Sent!");
@@ -38,8 +42,8 @@ export const Contact = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <RevealOnScroll>
-        <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+        <div className="px-4 sm:px-6 lg:px-8 w-full min-w-[200px] max-w-md mx-auto p-4 sm:p-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             Get In Touch
           </h2>
 

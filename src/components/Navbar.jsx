@@ -6,9 +6,9 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   }, [menuOpen]);
   return (
     <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
-      <div className="container mx-auto px-4">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-8 lg:px-30 ">
         <div className="flex justify-between items-center h-16">
-          <a href="#home" className="font-mono text-xl font-bold text-white">
+          <a href="#home" className="font-mono text-xl font-bold text-white -ml-60">
             Veerendra<span className="text-blue-500">S</span>
           </a>
 
