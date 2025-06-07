@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-require('dotenv').config();
 import './App.css'
 import "./index.css"
 import { MobileMenu } from './components/MobileMenu'
